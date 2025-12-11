@@ -12,6 +12,9 @@ def price_list():
             print("\nFinal DataFrame:")
             print(df_bought)
         responce = input("\nWould you like to continue? (Y/N): ")
-        if responce != "Y":
-            print("\nBye!")
-            break
+        if responce == "Y":
+            num_items_bought = int(input("Enter number of item(s) purchased: "))
+        else:
+            repeat_program = False
+            print("Bye!")
+        
